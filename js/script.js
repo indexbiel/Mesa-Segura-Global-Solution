@@ -46,3 +46,12 @@ function proximo() {
 
     mostrarSlide();
 }
+function anterior() {
+    posicao = posicao - 1;
+
+    if (posicao < 0) {
+        posicao = imagens.length - 1;
+    }
+
+    mostrarSlide();
+}
