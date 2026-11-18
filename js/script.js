@@ -69,3 +69,41 @@ function mostrarMensagemErro(idMensagem, texto) {
     mensagem.textContent = texto;
     mensagem.className = "mensagem erro";
 }
+function validarFormularioApoio() {
+    const nome = document.getElementById("apoio-nome");
+    const email = document.getElementById("apoio-email");
+    const telefone = document.getElementById("apoio-tel");
+    const cidade = document.getElementById("apoio-cidade");
+
+    let tudoCerto = true;
+
+    if (nome.value.trim() === "") {
+        nome.classList.add("campo-invalido");
+        tudoCerto = false;
+    } else {
+        nome.classList.remove("campo-invalido");
+    }
+
+    if (email.value.trim() === "") {
+        email.classList.add("campo-invalido");
+        tudoCerto = false;
+    } else {
+        email.classList.remove("campo-invalido");
+    }
+
+    if (telefone.value.trim() === "") {
+        telefone.classList.add("campo-invalido");
+        tudoCerto = false;
+    } else {
+        telefone.classList.remove("campo-invalido");
+    }
+
+    if (cidade.value.trim() === "") {
+        cidade.classList.add("campo-invalido");
+        tudoCerto = false;
+    } else {
+        cidade.classList.remove("campo-invalido");
+    }
+
+    return tudoCerto;
+}
