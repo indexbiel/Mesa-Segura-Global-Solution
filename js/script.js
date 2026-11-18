@@ -19,3 +19,15 @@ function trocarImagem() {
 
     foto.src = imagens[posicao];
 }
+
+function trocarTextoAlt() {
+    const foto = document.getElementById("slide-img");
+
+    foto.alt = textosAlt[posicao];
+}
+
+function trocarLegenda() {
+    const legenda = document.getElementById("slide-legenda");
+
+    legenda.textContent = legendas[posicao];
+}
