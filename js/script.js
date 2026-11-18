@@ -31,3 +31,9 @@ function trocarLegenda() {
 
     legenda.textContent = legendas[posicao];
 }
+
+function mostrarSlide() {
+    trocarImagem();
+    trocarTextoAlt();
+    trocarLegenda();
+}
