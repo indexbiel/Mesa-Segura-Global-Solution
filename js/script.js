@@ -55,3 +55,17 @@ function anterior() {
 
     mostrarSlide();
 }
+
+function mostrarMensagemSucesso(idMensagem, texto) {
+    const mensagem = document.getElementById(idMensagem);
+
+    mensagem.textContent = texto;
+    mensagem.className = "mensagem sucesso";
+}
+
+function mostrarMensagemErro(idMensagem, texto) {
+    const mensagem = document.getElementById(idMensagem);
+
+    mensagem.textContent = texto;
+    mensagem.className = "mensagem erro";
+}
