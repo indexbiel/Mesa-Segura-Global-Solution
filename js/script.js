@@ -37,3 +37,12 @@ function mostrarSlide() {
     trocarTextoAlt();
     trocarLegenda();
 }
+function proximo() {
+    posicao = posicao + 1;
+
+    if (posicao >= imagens.length) {
+        posicao = 0;
+    }
+
+    mostrarSlide();
+}
