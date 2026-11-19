@@ -1,4 +1,4 @@
-const imagens = ["img/mercado.jpg", "img/slide2.svg", "img/slide3.svg"];
+const imagens = ["../img/mercado.jpg", "../img/slide2.svg", "../img/slide3.svg"];
 
 const textosAlt = [
     "Corredor de mercado com frutas e legumes expostos",

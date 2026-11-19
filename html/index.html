@@ -61,6 +61,16 @@
         <p>Mostra o estoque em risco e conecta o mercado a instituições próximas.</p>
       </div>
     </div>
+    <div class="slideshow">
+      <h3>Mesa Segura na prática</h3>
+      <img id="slide-img" src="../img/mercado.jpg" alt="Corredor de mercado com frutas e legumes expostos">
+      <p id="slide-legenda" class="legenda"></p>
+      <div class="slide-controles">
+        <button type="button" id="slide-anterior" class="slide-botao">&larr; Anterior</button>
+        <div id="slide-pontos" class="slide-pontos"></div>
+        <button type="button" id="slide-proximo" class="slide-botao">Próximo &rarr;</button>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -126,7 +136,7 @@
       <div class="barra"></div>
       <p class="texto">Conte-nos como entrar em contato. Esta etapa registra somente seu interesse; ela não garante participação, recebimento de alimentos ou prazo de resposta.</p>
     </div>
-    <form class="formulario" id="form-apoio">
+    <form class="formulario" id="form-apoio" novalidate>
       <h3>Solicitar participação</h3>
       <label for="apoio-nome">Nome</label>
       <input type="text" id="apoio-nome" name="apoio-nome" required>
@@ -151,7 +161,7 @@
       <div class="barra"></div>
       <p class="texto">Mercados, hortifrútis e outros estabelecimentos podem manifestar interesse em apoiar iniciativas locais. Uma eventual participação dependerá de avaliação, disponibilidade e regras aplicáveis.</p>
     </div>
-    <form class="formulario" id="form-mercado">
+    <form class="formulario" id="form-mercado" novalidate>
       <h3>Cadastrar interesse</h3>
       <label for="est-nome">Nome da pessoa responsável</label>
       <input type="text" id="est-nome" name="est-nome" required>
