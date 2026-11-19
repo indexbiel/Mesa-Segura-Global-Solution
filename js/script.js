@@ -177,3 +177,17 @@ function enviarApoio(event) {
         mostrarMensagemErro("msg-apoio", "Preencha todos os campos.");
     }
 }
+
+function enviarMercado(event) {
+    event.preventDefault();
+
+    const formulario = document.getElementById("form-mercado");
+    const formularioValido = validarFormularioMercado();
+
+    if (formularioValido === true) {
+        mostrarMensagemSucesso("msg-mercado", "Cadastro registrado. Obrigado pelo interesse!");
+        formulario.reset();
+    } else {
+        mostrarMensagemErro("msg-mercado", "Preencha todos os campos.");
+    }
+}
