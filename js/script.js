@@ -194,3 +194,7 @@ function enviarMercado(event) {
 
 document.getElementById("slide-proximo").addEventListener("click", proximo);
 document.getElementById("slide-anterior").addEventListener("click", anterior);
+
+document.getElementById("form-apoio").addEventListener("submit", enviarApoio);
+document.getElementById("form-mercado").addEventListener("submit", enviarMercado);
+
