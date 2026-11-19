@@ -199,3 +199,5 @@ document.getElementById("form-apoio").addEventListener("submit", enviarApoio);
 document.getElementById("form-mercado").addEventListener("submit", enviarMercado);
 
 setInterval(proximo, 4000);
+
+window.onload = mostrarSlide;
