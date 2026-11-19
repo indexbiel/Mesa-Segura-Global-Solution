@@ -191,3 +191,6 @@ function enviarMercado(event) {
         mostrarMensagemErro("msg-mercado", "Preencha todos os campos.");
     }
 }
+
+document.getElementById("slide-proximo").addEventListener("click", proximo);
+document.getElementById("slide-anterior").addEventListener("click", anterior);
