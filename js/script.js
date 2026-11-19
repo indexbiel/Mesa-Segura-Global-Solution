@@ -198,3 +198,4 @@ document.getElementById("slide-anterior").addEventListener("click", anterior);
 document.getElementById("form-apoio").addEventListener("submit", enviarApoio);
 document.getElementById("form-mercado").addEventListener("submit", enviarMercado);
 
+setInterval(proximo, 4000);
