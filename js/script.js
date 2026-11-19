@@ -69,6 +69,7 @@ function mostrarMensagemErro(idMensagem, texto) {
     mensagem.textContent = texto;
     mensagem.className = "mensagem erro";
 }
+
 function validarFormularioApoio() {
     const nome = document.getElementById("apoio-nome");
     const email = document.getElementById("apoio-email");
