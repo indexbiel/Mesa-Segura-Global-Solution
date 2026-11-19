@@ -163,3 +163,17 @@ function validarFormularioMercado() {
 
     return tudoCerto;
 }
+
+function enviarApoio(event) {
+    event.preventDefault();
+
+    const formulario = document.getElementById("form-apoio");
+    const formularioValido = validarFormularioApoio();
+
+    if (formularioValido === true) {
+        mostrarMensagemSucesso("msg-apoio", "Solicitação registrada. Obrigado pelo interesse!");
+        formulario.reset();
+    } else {
+        mostrarMensagemErro("msg-apoio", "Preencha todos os campos.");
+    }
+}
