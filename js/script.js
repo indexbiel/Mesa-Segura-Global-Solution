@@ -108,3 +108,58 @@ function validarFormularioApoio() {
 
     return tudoCerto;
 }
+
+function validarFormularioMercado() {
+    const responsavel = document.getElementById("est-nome");
+    const email = document.getElementById("est-email");
+    const telefone = document.getElementById("est-tel");
+    const cidade = document.getElementById("est-cidade");
+    const estabelecimento = document.getElementById("est-estab");
+    const tipo = document.getElementById("est-tipo");
+
+    let tudoCerto = true;
+
+    if (responsavel.value.trim() === "") {
+        responsavel.classList.add("campo-invalido");
+        tudoCerto = false;
+    } else {
+        responsavel.classList.remove("campo-invalido");
+    }
+
+    if (email.value.trim() === "") {
+        email.classList.add("campo-invalido");
+        tudoCerto = false;
+    } else {
+        email.classList.remove("campo-invalido");
+    }
+
+    if (telefone.value.trim() === "") {
+        telefone.classList.add("campo-invalido");
+        tudoCerto = false;
+    } else {
+        telefone.classList.remove("campo-invalido");
+    }
+
+    if (cidade.value.trim() === "") {
+        cidade.classList.add("campo-invalido");
+        tudoCerto = false;
+    } else {
+        cidade.classList.remove("campo-invalido");
+    }
+
+    if (estabelecimento.value.trim() === "") {
+        estabelecimento.classList.add("campo-invalido");
+        tudoCerto = false;
+    } else {
+        estabelecimento.classList.remove("campo-invalido");
+    }
+
+    if (tipo.value.trim() === "") {
+        tipo.classList.add("campo-invalido");
+        tudoCerto = false;
+    } else {
+        tipo.classList.remove("campo-invalido");
+    }
+
+    return tudoCerto;
+}
